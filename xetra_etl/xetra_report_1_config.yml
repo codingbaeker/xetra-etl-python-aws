@@ -1,0 +1,21 @@
+# Logging configuration
+
+logging:
+  version: 1
+  formatters:
+    xetra:
+      format: "Xetra Transformer - %(asctime)s - %(levelname)s - %(message)s"
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: xetra
+      level: DEBUG
+      stream: ext://sys.stdout
+  loggers:
+    xetraExample:
+      level: DEBUG
+      handlers: [console]
+      propagate: no
+  root:
+    level: DEBUG
+    handler: [console]
