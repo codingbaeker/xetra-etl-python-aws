@@ -20,7 +20,7 @@ class TestS3BucketConnectorMethods(unittest.TestCase):
         """ 
         Setting up the environment
         """
-        # mocking s3 connection start
+        # Mocking s3 connection start
         self.mock_s3 = mock_s3()
         self.mock_s3.start()
         # Defining the class arguments
