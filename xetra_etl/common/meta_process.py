@@ -3,7 +3,6 @@ Methods for processing the meta file
 """
 from datetime import datetime, timedelta
 import collections
-from time import time
 
 import pandas as pd
 
@@ -69,7 +68,7 @@ class MetaProcess():
         try:
             # If meta file exists create return_date_list using the content of the meta file
             # Reading meta file
-            df_meta = s3_bucket_meta.read_csv_to_df(meta_key)
+            df_meta = s3_bucket_meta.read_csv_as_df(meta_key)
             # Creating a list of dates from first_date untill today
             dates = [start + timedelta(days=x) for x in range(0, (today - start).days + 1)]
             # Crating set of all dates in meta file

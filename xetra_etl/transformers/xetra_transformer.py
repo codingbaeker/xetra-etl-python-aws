@@ -148,7 +148,7 @@ class XetraETL():
         data_frame.rename(columns={
             self.src_args.src_col_min_price: self.trg_args.trg_col_min_price,
             self.src_args.src_col_max_price: self.trg_args.trg_col_max_price,
-            self.src_args.src_col_traded_vol: self.trg_args.trg_col_dail_trad_vol
+            self.src_args.src_col_traded_vol: self.trg_args.trg_col_daily_traded_vol
             }, inplace=True)
         # Aggregating per ISIN and day -> opening price, closing price,
         # minimum price, maximum price, traded volume
@@ -160,7 +160,7 @@ class XetraETL():
                     self.trg_args.trg_col_clos_price: 'min',
                     self.trg_args.trg_col_min_price: 'min',
                     self.trg_args.trg_col_max_price: 'max',
-                    self.trg_args.trg_col_dail_trad_vol: 'sum'})
+                    self.trg_args.trg_col_daily_traded_vol: 'sum'})
         # Change of current day's closing price compared to the
         # previous trading day's closing price in %
         data_frame[self.trg_args.trg_col_ch_prev_clos] = data_frame\

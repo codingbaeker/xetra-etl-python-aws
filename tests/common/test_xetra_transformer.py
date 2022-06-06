@@ -73,7 +73,7 @@ class TestXetraETLMethods(unittest.TestCase):
             'trg_col_clos_price': 'closing_price_eur',
             'trg_col_min_price': 'minimum_price_eur',
             'trg_col_max_price': 'maximum_price_eur',
-            'trg_col_dail_trad_vol': 'daily_traded_volume',
+            'trg_col_daily_traded_vol': 'daily_traded_volume',
             'trg_col_ch_prev_clos': 'change_prev_closing_%',
             'trg_key': 'report1/xetra_daily_report1_',
             'trg_key_date_format': '%Y%m%d_%H%M%S',
