@@ -5,16 +5,16 @@ name = "pypi"
 
 [packages]
 pandas = "*"
-awscli = "*"
 jupyter = "*"
 boto3 = "*"
 pyarrow = "*"
 pyyaml = "*"
-pylint = "*"
-moto = "*"
-coverage = "*"
 
 [dev-packages]
+coverage = "*"
+pylint = "*"
+moto = "*"
+awscli = "*"
 
 [requires]
 python_version = "3.10"

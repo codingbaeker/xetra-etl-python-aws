@@ -1,6 +1,5 @@
 """Connector and methods accessing S3"""
 from io import BytesIO, StringIO
-import os
 import logging
 
 import boto3
