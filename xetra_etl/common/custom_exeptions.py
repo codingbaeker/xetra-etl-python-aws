@@ -1,4 +1,4 @@
-"""Custom Exeptions"""
+"""Custom Exceptions"""
 
 class WrongFormatException(Exception):
     """
